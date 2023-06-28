@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <title>Delote-Beauty</title>
+</head>
+<body>
+    <div id="scroll_menu_id" class="scroll_menu">
+        <div class="close_button">
+            <button onclick= "closeMenu(event)">
+                <img src="icon/iconclose.png" alt="">
+            </button>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, adipiscing amet in egestas sem dui, arcu faucibus scelerisque. Nisl est felis id volutpat. Sed dolor fermentum amet lectus nibh quis. Tortor donec pellentesque leo ac placerat. Morbi.</p>
+        <div class="contacts">
+            <p class = "topic">Контакты</p>
+            <p class="info">+7 (812) 123-45-67</p>
+            <p class="info">+7 (911) 123-45-67</p>
+            <p class="info">Новоостровский проспект, дом 36 лит. С</p>
+        </div>
+        <div class="working_mode">
+            <p class = "topic">Режим работы</p>
+            <p class="info">C 10:00 до 21:00 (Пн-Пт)</p>
+            <p class="info">С 11:00 до 20:00 (Сб-Вс)</p>
+        </div>
+    </div>
+
+    <div class="present">
+        <img class="logoimg" src="image/logoimg.png" alt="">
+        <div class="nav_bar">
+            <a href="page/404.html"><img class="inst_src" src="icon/logo.png" alt=""></a>
+            <div class="menu">
+                <a href="index.html">Главная</a>
+                <a href="page/masters.html">Мастера</a>
+                <a href="page/404.html">Косметика</a>
+            </div>
+            <img class="icon_centerr" src="icon/icon_center.png" alt="">
+            <div class="menu">
+                <a href="page/price.html">Прайс</a>
+                <a href="page/404.html">Отзывы</a>
+                <a href="page/kontackt.html">Контакты</a>
+            </div>
+            <button  onclick="openMenu(event)" class="scroll_menu_icon">
+                <img src="icon/scroll_menu_icon.png" alt="">
+            </button>
+        </div>
+        <p class="present_text">Салон красоты «Delote-Beauty» на Крестовском</p>
+
+        <div class="recomend">
+            <img class="present_mouse_image" src="icon/mouse.png" alt="">
+            <p class="recomend_text">Прокрутите вниз</p>
+        </div>
+    </div>
+
+    <div class="content_box">
+        <div class="quote">
+            <img class="quotes_image" src="icon/quotes.png" alt="">
+            <p class="qoute_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu nibh vitae amet. Ipsum, pharetra donec ornare velit. Id at quisque accumsan risus ac ipsum ut. Sit elit, facilisi proin non malesuada sociis tristique. Viverra augue lorem ut quisque quam tortor, malesuada iaculis. 
+            </p>
+            <p class="qoute_text">
+                Et elementum at nulla venenatis, faucibus integer. Auctor neque eros, viverra rutrum. Fames ultrices condimentum tortor nec penatibus. Velit imperdiet sapien fringilla vestibulum sit fames.
+            </p>
+        </div>
+        <div class="services">
+            <a href="page/404.html">
+                <div class="serv">
+                    <div class="block"></div>
+                    <img class="services_image" src="image/1image.png" alt="">
+                    <p class="services_text">Парикмахерские услуги</p>
+                </div>
+            </a>
+            <a href="page/404.html">
+                <div class="serv">
+                    <div class="block"></div>
+                    <img class="services_image" src="image/2image.png" alt="">
+                    <p class="services_text">Маникюр</p>
+                </div>
+            </a>
+            <a href="page/404.html">
+                <div class="serv">
+                    <div class="block"></div>
+                    <img class="services_image" src="image/3image.png" alt="">
+                    <p class="services_text">Педикюр</p>
+                </div>
+            </a>
+            <a href="page/404.html">
+                <div class="serv">
+                    <div class="block"></div>
+                    <img class="services_image" src="image/4image.png" alt="">
+                    <p class="services_text">Косметология</p>
+                </div>
+            </a>
+            <a href="page/404.html">
+                <div class="serv">
+                    <div class="block"></div>
+                    <img class="services_image" src="image/5image.png" alt="">
+                    <p class="services_text">Эстетист по телу</p>
+                </div>
+            </a>
+            <a href="page/404.html">
+                <div class="serv">
+                    <div class="block"></div>
+                    <img class="services_image" src="image/6image.png" alt="">
+                    <p class="services_text">Визаж</p>
+                </div>
+            </a>
+        </div>
+        <div class="brands">
+            <img src="image/logobrand1.png">
+            <img src="image/logobrand2.png">
+            <img src="image/logobrand3.png">
+            <img src="image/logobrand4.png">
+
+        </div>
+        <div class="works_tabs">
+            <p class="works_text">Наши работы</p>
+            <div class="works_menu">
+                <button class="works_links" onclick="openWorks(event, 'All')" id= "defaultWorks">Показать все</button>
+                <button class="works_links" onclick="openWorks(event, 'Pariks')">Парикмахерские услуги</button>
+                <button class="works_links" onclick="openWorks(event, 'Manik')">Маникюр</button>
+                <button class="works_links" onclick="openWorks(event, 'Pedicur')">Педикюр</button>
+            </div>
+            
+            <div id="All" class="works_image">
+                <img src="image/work-9.png">
+                <img src="image/work-8.png">
+                <img src="image/work-7.png">
+                <img src="image/work-6.png">
+                <img src="image/work-5.png">
+                <img src="image/work-4.png">
+                <img src="image/work-3.png">
+                <img src="image/work-2.png">
+                <img src="image/work-1.png">
+            </div>
+
+            <div id="Pariks"  class="works_image">
+                <div class="primer1"> Пример работ </div>
+                <div class="primer1"> Пример работ </div>
+                <div class="primer1"> Пример работ </div>
+                <div class="primer1"> Пример работ </div>
+                <div class="primer1"> Пример работ </div>
+                <div class="primer1"> Пример работ </div>
+                <div class="primer1"> Пример работ </div>
+                <div class="primer1"> Пример работ </div>
+                <div class="primer1"> Пример работ </div>
+            </div>
+
+            <div id="Manik" class="works_image">
+                <div class="primer2"> Пример работ </div>
+                <div class="primer2"> Пример работ </div>
+                <div class="primer2"> Пример работ </div>
+                <div class="primer2"> Пример работ </div>
+                <div class="primer2"> Пример работ </div>
+                <div class="primer2"> Пример работ </div>
+                <div class="primer2"> Пример работ </div>
+                <div class="primer2"> Пример работ </div>
+                <div class="primer2"> Пример работ </div>
+            </div>
+
+            <div id="Pedicur" class="works_image">
+                <div class="primer3"> Пример работ </div>
+                <div class="primer3"> Пример работ </div>
+                <div class="primer3"> Пример работ </div>
+                <div class="primer3"> Пример работ </div>
+                <div class="primer3"> Пример работ </div>
+                <div class="primer3"> Пример работ </div>
+                <div class="primer3"> Пример работ </div>
+                <div class="primer3"> Пример работ </div>
+                <div class="primer3"> Пример работ </div>
+            </div>
+
+        </div>
+        <script>
+            document.getElementById("defaultWorks").click();
+        </script>
+
+
+        
+    </div>
+    <div class="basement">
+        <div class="footer">
+            <div class="footer_logo">
+                <img src="icon/icon_center.png">
+            </div>
+            <div class="contacts">
+                <p class = "topic">Контакты</p>
+                <p class="info">+7 (812) 123-45-67</p>
+                <p class="info">+7 (911) 123-45-67</p>
+                <p class="info">Новоостровский проспект, дом 36 лит. С</p>
+            </div>
+            <div class="working_mode">
+                <p class = "topic">Режим работы</p>
+                <p class="info">C 10:00 до 21:00 (Пн-Пт)</p>
+                <p class="info">С 11:00 до 20:00 (Сб-Вс)</p>
+            </div>
+            <div class="inst">
+                <p class = "topic">Мы в Instagram</p>
+                <a href="page/404.html"><img src="icon/logo.png"></a>
+            </div>
+        </div>
+        <p class="info">
+            Copyright © 2017 - 2022
+        </p>
+    </div>
+
+</body>
+</html>

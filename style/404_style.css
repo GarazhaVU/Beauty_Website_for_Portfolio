@@ -1,0 +1,165 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+p{
+    margin: 0;
+}
+
+
+
+
+/*Шапка*/
+
+
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    min-width: 1296px;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 63%;
+    height: 70px;
+ 
+    border-bottom: 1px solid white;
+}
+
+.inst_src{
+    width: 24px;
+    height: 24px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+    
+}
+
+.menu a:after{
+    content: "";
+    display: block;
+    bottom: 15%;
+    background: #CDAA7D;
+    border-radius: 100px;
+    height: 1px;
+    width: 0%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0; 
+    transition: width 0.2s, opacity 0.2s;
+   
+}
+
+.menu a:hover:after{
+    width: 100%;
+    opacity: 1;
+
+}
+
+.menu a:hover{
+    color: #CDAA7D;
+}
+
+.icon_center{
+    width: 40px;
+    height: 40px;
+}
+
+.scroll_menu_icon{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    width: 50px;
+    height: 20px;
+}
+
+
+
+
+/* Выплывающее меню */
+
+
+
+
+.scroll_menu{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    width: 475px;
+    height: 1038px;
+    right: -475px;
+    transition: right 0.8s;
+}
+
+.close_button{
+    width: 315px;
+    
+}
+
+.scroll_menu button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll_menu p{
+    color: #FFFFFF;
+    width: 315px;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond';
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+/* контент */
+
+
+
+
+.error{
+    font-size: 25vw;
+    color: white;
+}
+
+.error_text{
+    font-size: 2vw;
+    color: white;
+}

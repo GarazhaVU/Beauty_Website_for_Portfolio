@@ -1,0 +1,257 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    width: 100vw;
+    height: 2584px;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+
+
+
+/*Шапка*/
+
+
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    min-width: 1296px;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 63%;
+    height: 70px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
+
+.inst_src{
+    width: 24px;
+    height: 24px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+    
+}
+
+.menu a:after{
+    content: "";
+    display: block;
+    bottom: 15%;
+    background: #CDAA7D;
+    border-radius: 100px;
+    height: 1px;
+    width: 0%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0; 
+    transition: width 0.2s, opacity 0.2s;
+   
+}
+
+.menu a:hover:after{
+    width: 100%;
+    opacity: 1;
+
+}
+
+.menu a:hover{
+    color: #CDAA7D;
+}
+
+.icon_center{
+    width: 40px;
+    height: 40px;
+}
+
+.scroll_menu_icon{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    width: 50px;
+    height: 20px;
+}
+
+
+
+
+/* Выплывающее меню */
+
+
+
+
+.scroll_menu{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    width: 475px;
+    height: 1038px;
+    right: -475px;
+    transition: right 0.8s;
+    z-index: 5;
+}
+
+.close_button{
+    width: 315px;
+    
+}
+
+.scroll_menu button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll_menu p{
+    color: #FFFFFF;
+    width: 315px;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond';
+
+}
+
+
+
+
+/* контент */
+
+
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 1926px;
+    height: 2085px;
+}
+
+.Zprice{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-family: Garamond;
+}
+
+.price_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1296px;
+    height: 536;
+}
+
+.price_image{
+    width: 636px;
+    height: 536px;
+}
+
+.price_list{
+    height: 472px;
+    width: 526px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price_items{
+    position: relative;
+    height: 87px;
+    width: 526px;
+    border-bottom: 1px solid white;
+}
+
+.price_items_text1{
+    margin: 0;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 27px;
+    font-family:Garamond;
+}
+
+.price_items_text2{
+    margin: 0;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 27px;
+    font-family:Garamond;
+    right: 0;
+}
+
+.price_items_text3{
+    margin: 0;
+    bottom: 0;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family:Garamond;
+}
+
+
+
+
+/* подвал */
+
+
+
+
+.basement{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    bottom: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    height: 314px;
+    width: 1296px;
+}
+
+.footer_logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.topic{
+    font-size: 24px;
+    font-family: Garamond;
+    color: #FFFFFF;
+}
+
+.info{
+    font-size: 18px;
+    font-family: "Cormorant Garamond";
+    color: #FFFFFF;
+}

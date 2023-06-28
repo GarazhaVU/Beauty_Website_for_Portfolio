@@ -1,0 +1,277 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    width: 100vw;
+    height: 2066px;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+
+
+
+/*Шапка*/
+
+
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    min-width: 1296px;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 63%;
+    height: 70px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
+
+.inst_src{
+    width: 24px;
+    height: 24px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+    
+}
+
+.menu a:after{
+    content: "";
+    display: block;
+    bottom: 15%;
+    background: #CDAA7D;
+    border-radius: 100px;
+    height: 1px;
+    width: 0%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0; 
+    transition: width 0.2s, opacity 0.2s;
+   
+}
+
+.menu a:hover:after{
+    width: 100%;
+    opacity: 1;
+
+}
+
+.menu a:hover{
+    color: #CDAA7D;
+}
+
+.icon_center{
+    width: 40px;
+    height: 40px;
+}
+
+.scroll_menu_icon{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    width: 50px;
+    height: 20px;
+}
+
+
+
+
+/* Выплывающее меню */
+
+
+
+
+.scroll_menu{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    width: 475px;
+    height: 1038px;
+    right: -475px;
+    transition: right 0.8s;
+    z-index: 5;
+}
+
+.close_button{
+    width: 315px;
+    
+}
+
+.scroll_menu button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll_menu p{
+    color: #FFFFFF;
+    width: 315px;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond';
+
+}
+
+
+
+
+/* мастера  */
+
+
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 1926px;
+}
+
+.Zmaster{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-family: Garamond;
+}
+
+.masters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 1296px;
+    height: 1251px;
+}
+
+.masters a .masters_text:after{
+    content: "";
+    display: block;
+    bottom: 15%;
+    background: #CDAA7D;
+    border-radius: 100px;
+    height: 1px;
+    width: 0%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0; 
+    transition: width 0.2s, opacity 0.2s;
+}
+
+.masters a:hover .masters_text{
+    color:#CDAA7D;
+}
+
+.masters a:hover .masters_text:after{
+    width: 100%;
+    opacity: 1;
+}
+
+.master{
+    position: relative;
+    width: 416px;
+    height: 595px;
+}
+
+.block{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    border: 1px solid #CDAA7D;
+    width: 396px;
+    height: 477px;
+}
+
+.masters_image{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    width: 400px;
+    height: 477px;
+}
+
+.masters_text{
+    position: absolute;
+    bottom: 30px;
+    font-family: 'Garamond';
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: 0;
+    transition: color 0.2s;
+}
+
+.masters_text_prof{
+    position: absolute;
+    bottom: 0px;
+    font-family: 'Garamond';
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+
+
+/* подвал */
+
+
+
+
+.basement{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    bottom: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    height: 314px;
+    width: 1296px;
+}
+
+.footer_logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.topic{
+    font-size: 24px;
+    font-family: Garamond;
+    color: #FFFFFF;
+}
+
+.info{
+    font-size: 18px;
+    font-family: "Cormorant Garamond";
+    color: #FFFFFF;
+}
